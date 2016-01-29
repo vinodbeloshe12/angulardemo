@@ -1,0 +1,18 @@
+<div class="container">
+
+    <!-- <flex-slider flex-slide="s in mySlides">
+        <li>
+            <img ng-src="{{s}}">
+        </li>
+    </flex-slider> -->
+
+    <flex-slider flex-slide="slide in homeslider track by $index" animation="slide" class="carousel">
+
+      <li>
+
+            <img style="height:400px;" ng-src="{{slide.img | serverimage}}">
+
+      </li>
+    </flex-slider>
+
+</div>

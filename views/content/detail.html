@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>List of Categories</h2>
+<div class="col-md-12">
+<div class="col-md-4 col-sm-4 col-xs-4">
+  <div ng-repeat="cat in category">
+          <!-- <a href="#/getid/{{tag.id}}"><h3>[{{$index + 1}}] {{tag.name}}</h3></a> -->
+          <a href="" style="text-decoration:none;" ng-click="pbycat(cat.id);">{{cat.name}}&nbsp;</a>
+    </div></div>
+    <div class="col-md-8 col-sm-8 col-xs-8">
+
+      <div ng-repeat="p in detail">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+
+      <p><h5><img style="width:150px; margin:0 auto; height:150px;border-radius:50%;" ng-src="http://localhost/selfbackend/uploads/{{p.image}}"></h5></p>
+  <p><a href="#/{{p.id}}"><h4 style="margin:0 auto;">{{p.name}}</h4></a></p>
+      <p style="margin:0 auto;color:red;">{{p.price}} Rs.</p>
+      </div>
+    </div></div>
+</div></div>
